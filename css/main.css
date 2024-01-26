@@ -1,0 +1,50 @@
+/*      MAIN SETTINGS      */
+
+body {
+  font: 18px ‘Gilroy’, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+div,
+span,
+button,
+a,
+form,
+input {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/*      HEADER      */

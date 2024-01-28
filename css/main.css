@@ -1,9 +1,12 @@
 /*      MAIN SETTINGS      */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font: 18px ‘Gilroy’, sans-serif;
-  padding: 0;
-  margin: 0;
   background: #fff;
 }
 
@@ -16,8 +19,7 @@ span {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-size: 34px;
   margin: 0;
   padding: 0;
@@ -25,15 +27,6 @@ h5 {
 
 h2 {
   margin-bottom: 18px;
-}
-
-div,
-span,
-button,
-a,
-form,
-input {
-  box-sizing: border-box;
 }
 
 ul,
@@ -55,6 +48,23 @@ li {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.link {
+  margin: 0 auto;
+  color: #070707;
+  max-width: 275px;
+  width: 100%;
+  display: block;
+  margin-top: 44px;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 2px solid #070707;
+}
+
+.image {
+  margin-top: 99px;
+  margin-bottom: 44px;
 }
 
 /*      HEADER      */
@@ -79,16 +89,16 @@ li {
   max-width: 940px;
   width: 100%;
   height: 1px;
-  position: fixed;
+  position: absolute;
   display: block;
   background: #828282;
   margin-top: 31px;
 }
 
 .main {
-  align-items: center;
+  align-items: flex-end;
   color: #070707;
-  margin-top: 39px;
+  margin-top: 71px;
 }
 
 .main__author {
@@ -103,9 +113,14 @@ li {
 }
 
 .main__lang {
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: rotate(270deg);
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
+}
+
+.main__ru {
+  color: #828282;
 }
 
 .main__img {
@@ -130,3 +145,74 @@ li {
 }
 
 /*      SECOND SECTION      */
+
+.skills {
+  text-align: center;
+  padding: 162px 0 48px;
+}
+
+.portfolio {
+  margin-top: 69px;
+  font-weight: 500;
+}
+
+.portfolio__works {
+  align-items: center;
+  margin-top: 83px;
+}
+
+.portfolio__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__item span {
+  margin-top: 23px;
+  color: #828282;
+  font-size: 14px;
+}
+
+.porfolio__star {
+  margin-top: 41px;
+  text-align: center;
+}
+
+.fa-star {
+  display: flex;
+}
+
+.grey__star {
+  color: #e5e5e5;
+}
+
+/*      THIRD SECTION      */
+
+.collection {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 112px 0 96px;
+}
+
+.woman {
+  margin-top: 47px;
+}
+
+.woman__link {
+  margin: 0 auto;
+  max-width: 275px;
+  width: 100%;
+}
+
+.reebok__link {
+  max-width: 202px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.braun__link {
+  max-width: 259px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*      FOOTER      */

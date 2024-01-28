@@ -5,8 +5,16 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font: 18px ‘Gilroy’, sans-serif;
+  font: 18px "Gilroy";
   background: #fff;
 }
 
@@ -78,19 +86,17 @@ li {
   text-decoration: none;
 }
 
-.nav__item_a:hover {
+.nav__link:hover {
   font-weight: bold;
   color: #070707;
+  border-bottom: 3px solid black;
+  transition: 0.2s;
 }
 
 .nav__home a {
   text-decoration: none;
   font-weight: 700;
   color: #070707;
-}
-
-.nav__item_h:hover {
-  color: #828282;
 }
 
 .nav:after {
@@ -157,8 +163,8 @@ li {
   max-width: 485px;
   width: 100%;
   margin: 0 auto;
+  font-weight: 500;
 }
-
 /*      SECOND SECTION      */
 
 .skills {
@@ -185,10 +191,21 @@ li {
   max-width: 82px;
   width: 100%;
 }
+
+.figma:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 .portfolio__item span {
   margin-top: 23px;
   color: #828282;
   font-size: 14px;
+}
+
+.portfolio__img:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .porfolio__star {
@@ -198,6 +215,11 @@ li {
 
 .fa-star {
   display: flex;
+}
+
+i:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .grey__star {
@@ -226,6 +248,7 @@ li {
   margin: 0 auto;
   max-width: 275px;
   width: 100%;
+  margin-top: 44px;
 }
 
 .reebok__link {
@@ -278,6 +301,13 @@ li {
   font-weight: 700;
   background: #070707;
   border-radius: 33px;
+}
+
+.contacts__button:hover {
+  color: black;
+  background: #f6f6f6;
+  padding: 5px;
+  transition: 0.5s;
 }
 
 .icons {

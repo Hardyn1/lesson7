@@ -78,10 +78,19 @@ li {
   text-decoration: none;
 }
 
+.nav__item_a:hover {
+  font-weight: bold;
+  color: #070707;
+}
+
 .nav__home a {
   text-decoration: none;
   font-weight: 700;
   color: #070707;
+}
+
+.nav__item_h:hover {
+  color: #828282;
 }
 
 .nav:after {
@@ -119,12 +128,18 @@ li {
   font-size: 16px;
 }
 
-.main__ru {
+.ru {
   color: #828282;
 }
 
 .main__img {
   margin-top: 30px;
+}
+
+.main__img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 0 0 10px;
 }
 
 /*      FIRST SECTION      */
@@ -166,6 +181,10 @@ li {
   flex-direction: column;
 }
 
+.figma {
+  max-width: 82px;
+  width: 100%;
+}
 .portfolio__item span {
   margin-top: 23px;
   color: #828282;
@@ -197,6 +216,12 @@ li {
   margin-top: 47px;
 }
 
+.woman__img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 0 0 10px;
+}
+
 .woman__link {
   margin: 0 auto;
   max-width: 275px;
@@ -209,10 +234,71 @@ li {
   margin: 0 auto;
 }
 
+.reebok__img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 0 0 10px;
+}
+
 .braun__link {
   max-width: 259px;
   width: 100%;
   margin: 0 auto;
 }
 
+.braun__img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 0 0 10px;
+}
+
 /*      FOOTER      */
+
+.footer {
+  padding: 114px 0 123px;
+  text-align: center;
+}
+
+.contacts__info {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 275px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contacts__button {
+  display: inline-block;
+  margin-top: 42px;
+  padding: 13px 30px 7px 28px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background: #070707;
+  border-radius: 33px;
+}
+
+.icons {
+  margin: 0 auto;
+  max-width: 342px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 45px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #070707;
+  font-size: 40px;
+}
+
+.apps {
+  color: #828282;
+  font-size: 14px;
+  max-width: 243px;
+  width: 100%;
+  margin: 0 auto;
+}

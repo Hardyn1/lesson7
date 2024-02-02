@@ -5,16 +5,9 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
-  font: 18px "Gilroy";
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
   background: #fff;
 }
 
@@ -84,19 +77,14 @@ li {
 .nav__item a {
   color: #828282;
   text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: 700;
 }
 
 .nav__link:hover {
-  font-weight: bold;
-  color: #070707;
-  border-bottom: 3px solid black;
-  transition: 0.2s;
-}
-
-.nav__home a {
-  text-decoration: none;
   font-weight: 700;
   color: #070707;
+  border-bottom: 2px solid black;
 }
 
 .nav:after {
@@ -111,7 +99,7 @@ li {
 }
 
 .main {
-  align-items: flex-end;
+  align-items: center;
   color: #070707;
   margin-top: 71px;
 }
@@ -130,21 +118,75 @@ li {
 .main__lang {
   font-weight: 700;
   text-transform: uppercase;
-  transform: rotate(270deg);
+  transform: rotate(-90deg);
+  position: relative;
+  left: 4.7%;
   font-size: 16px;
 }
 
-.ru {
+.main__lang a {
+  text-decoration: none;
+}
+.textRU {
   color: #828282;
+}
+
+.check {
+  position: relative;
+  width: 30px;
+  cursor: pointer;
+}
+
+.check:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 15px;
+  background: #333;
+  border-radius: 25px;
+}
+
+.check:checked::before {
+  background: #e0dd1b;
+}
+
+.check::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.check:checked::after {
+  left: 12px;
+  border: 2px solid #e0dd1b;
+}
+
+.check:checked ~ .text.textENG {
+  display: none;
+}
+
+.check:checked ~ .text.textRU {
+  display: block;
+}
+
+.textEN {
+  color: #070707;
 }
 
 .main__img {
   margin-top: 30px;
+  transition: ease-out 0.3s all;
 }
 
 .main__img:hover {
   transform: scale(1.1);
-  transition: 1s;
   box-shadow: 0 0 10px;
 }
 
@@ -190,11 +232,11 @@ li {
 .figma {
   max-width: 82px;
   width: 100%;
+  transition: ease-out 0.3s all;
 }
 
 .figma:hover {
   transform: scale(1.1);
-  transition: 1s;
 }
 
 .portfolio__item span {
@@ -203,9 +245,12 @@ li {
   font-size: 14px;
 }
 
+.portfolio__img {
+  transition: ease-out 0.3s all;
+}
+
 .portfolio__img:hover {
   transform: scale(1.1);
-  transition: 1s;
 }
 
 .porfolio__star {
@@ -217,9 +262,12 @@ li {
   display: flex;
 }
 
+i {
+  transition: ease-out 0.3s all;
+}
+
 i:hover {
   transform: scale(1.1);
-  transition: 1s;
 }
 
 .grey__star {
@@ -238,9 +286,12 @@ i:hover {
   margin-top: 47px;
 }
 
+.woman__img {
+  transition: ease-out 0.3s all;
+}
+
 .woman__img:hover {
   transform: scale(1.1);
-  transition: 1s;
   box-shadow: 0 0 10px;
 }
 
@@ -257,9 +308,12 @@ i:hover {
   margin: 0 auto;
 }
 
+.reebok__img {
+  transition: ease-out 0.3s all;
+}
+
 .reebok__img:hover {
   transform: scale(1.1);
-  transition: 1s;
   box-shadow: 0 0 10px;
 }
 
@@ -269,9 +323,12 @@ i:hover {
   margin: 0 auto;
 }
 
+.braun__img {
+  transition: ease-out 0.3s all;
+}
+
 .braun__img:hover {
   transform: scale(1.1);
-  transition: 1s;
   box-shadow: 0 0 10px;
 }
 
@@ -301,13 +358,13 @@ i:hover {
   font-weight: 700;
   background: #070707;
   border-radius: 33px;
+  box-sizing: border-box;
+  transition: ease-out 0.3s all;
 }
 
 .contacts__button:hover {
   color: black;
   background: #f6f6f6;
-  padding: 5px;
-  transition: 0.5s;
 }
 
 .icons {
